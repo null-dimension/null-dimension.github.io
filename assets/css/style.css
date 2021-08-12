@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+    background: linear-gradient(#000, #333);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(236, 189, 87);
+}
+#content {
+    padding: 1rem;
+}
