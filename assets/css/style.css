@@ -1,12 +1,55 @@
+* {
+  transition: all 0.1s 0.1s ease-in;
+}
 body {
-    height: 100vh;
-    background: linear-gradient(#000, #333);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background: linear-gradient(#000, #333); */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 a {
-    text-decoration: none;
-    color: rgb(236, 189, 87);
+  text-decoration: none;
+  color: rgb(236, 189, 87);
 }
+
 #content {
-    padding: 1rem;
+  padding: 1rem;
+}
+
+.badge {
+  font-size: 0.9rem;
+  margin: 0.2rem;
+  text-shadow: 0 2px 5px #333;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+.badge:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px 0px #333;
+}
+.badge-effect {
+  transform: scale(1.4);
+  box-shadow: 0 0 5px 0px #333;
+}
+.badge-effect-reset {
+  transform: scale(1);
+  box-shadow: 0;
+}
+.card-text p {
+  font-size: 1rem;
+}
+.skill-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#skills,
+#about {
+  transition: all 0.3s ease-in;
+}
+
+.padding-left-0 {
+  padding-left: 0 !important;
+}
+
+.max-width-50 {
+    max-width: 50%;
 }
