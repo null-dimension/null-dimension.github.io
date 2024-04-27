@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -13,32 +14,24 @@
       id="about-container"
       class="d-flex justify-content-center align-items-center flex-column w-100 vh-100"
     >
-      <div id="about" class="p-4 m-2 max-width-50">
+      <div id="about" class="p-4 m-2 max-width-50 min-width-50 wow bounceInDown">
         <div class="card-body">
           <h1 class="card-title">
             <xmp class="m-0"><Hrishi /></xmp>
           </h1>
           <h6 class="card-subtitle text-muted"></h6>
           <div class="card-text mt-4">
-            <p>
-              Result-oriented software engineer with
-              <span id="experience-year">4+</span> years of experience
-              specializing in JavaScript, Vue.js, Python, FastAPI and having a track
-              record of delivering high-quality, scalable web applications and
-              APIs. Possess strong debugging skills and a passion for staying
-              updated with the latest technologies.
-            </p>
+            <span id="about-paragraph"></span>
           </div>
         </div>
       </div>
     </div>
-
-    <div id="skills-container" class="h-100 w-100">
+    <div id="skills-container" class="h-100 w-100 p-3">
       <div id="skills" class="p-4">
         <div class="card-body">
-          <h4 class="card-title">
+          <h2 class="card-title wow flipInX">
             <xmp class="m-0"><Skills /></xmp>
-          </h4>
+          </h2>
           <div id="skills-grid">
             <div class="row">
               <div class="col-md-6 p-3 d-flex flex-column">
@@ -152,17 +145,311 @@
       </div>
     </div>
 
-    <!-- <div id="contact">
-    <h3>Contact</h3>
+    <div class="h-100 w-100 projects-container p-3">
+      <div id="exp-projects" class="p-4">
+        <div class="card-body">
+          <h2 class="card-title wow flipInX">
+            <xmp class="m-0"><ExperimentalProjects /></xmp>
+          </h2>
+          <div>
+            <div class="row">
+              <div class="col-md-6 p-3 d-flex flex-column slideInLeft">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-secondary h-100">
+                    <div class="card-body">
+                      <div
+                        class="project-title d-flex justify-content-between align-items-center mb-2"
+                      >
+                        <h4 class="card-title m-0">Snakes and Ladders</h4>
+                        <div>
+                          <a
+                            href="/snakes-and-ladders"
+                            class="btn btn-sm btn-dark"
+                            target="_blank"
+                            >Play</a
+                          >
+                        </div>
+                      </div>
+                      <div class="card-text">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">HTML</li>
+                          <li class="badge bg-secondary">CSS</li>
+                          <li class="badge bg-info">Javascript</li>
+                        </ul>
+                      </div>
+                      <p class="project-description">
+                        A game built on the concept of the board game snakes and
+                        ladders. Developed without using any third party
+                        libraries
+                      </p>
+                      <div id="project-features">
+                        <h5>Features</h5>
+                        <ul>
+                          <li>Auto Play</li>
+                          <li>Support upto 5 players at a time</li>
+                          <li>Play with AI</li>
+                          <li>Local Multiplayer</li>
+                          <li>
+                            Snakes and ladders are randomly generated each time
+                            the level is loaded
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 p-3 d-flex flex-column slideInRight">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-success h-100">
+                    <div class="card-body">
+                      <div
+                        class="project-title d-flex justify-content-between align-items-center mb-2"
+                      >
+                        <h4 class="card-title m-0">RNGFY</h4>
+                        <div>
+                          <a
+                            href="/rngfy"
+                            class="btn btn-sm btn-dark"
+                            target="_blank"
+                            >Demo</a
+                          >
+                          <a
+                            href="https://github.com/null-dimension/rngfy"
+                            class="btn btn-sm btn-dark"
+                            target="_blank"
+                            >Firefox Extension</a
+                          >
+                        </div>
+                      </div>
+                      <div class="card-text">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">HTML</li>
+                          <li class="badge bg-secondary">CSS</li>
+                          <li class="badge bg-info">Javascript</li>
+                        </ul>
+                      </div>
+                      <p class="project-description">
+                        Fun little project to randomly generate the styles in
+                        web page and see the effects it has
+                      </p>
+                      <div id="project-features">
+                        <h5>Features</h5>
+                        <ul>
+                          <li>
+                            Random styles are applied to HTML elmeents when
+                            button is clicked
+                          </li>
+                          <li>
+                            Can function as firefox extension to apply random
+                            styles to any web page being viewed
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  </div> -->
+    <div class="h-100 w-100 projects-container p-3">
+      <div id="exp-projects" class="p-4">
+        <div class="card-body">
+          <h2 class="card-title wow flipInX">
+            <xmp class="m-0"><ArchivedProjects /></xmp>
+          </h2>
+          <div>
+            <div class="row">
+              <div class="col-md-6 p-3 d-flex flex-column">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-secondary h-100">
+                    <div class="card-body">
+                      <div class="project-title d-flex justify-content-between">
+                        <h4 class="card-title">Intnet - Interests Network</h4>
+                      </div>
+                      <div class="card-text">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">HTML</li>
+                          <li class="badge bg-secondary">CSS</li>
+                          <li class="badge bg-info">Javascript</li>
+                          <li class="badge bg-success">Vue.js</li>
+                          <li class="badge bg-info">Bulma</li>
+                          <li class="badge bg-success">Node.js</li>
+                          <li class="badge bg-secondary">Restify</li>
+                          <li class="badge bg-primary">MySQL</li>
+                        </ul>
+                      </div>
+                      <p class="project-description">
+                        A social media site where users with similar interests
+                        can start discussions with each other, comment and
+                        follow others
+                      </p>
+                      <div id="project-features">
+                        <h5>Features</h5>
+                        <ul>
+                          <li>
+                            3 levels of access control: user, moderator, admin
+                          </li>
+                          <li>
+                            Each user can start or close discussion, like
+                            discussions, add comments, like comments
+                          </li>
+                          <li>
+                            Image upload support in both discussion and comment
+                          </li>
+                          <li>Follow other users</li>
+                          <li>Send private messages to others</li>
+                          <li>Set profile image</li>
+                          <li>
+                            Administrator dashboard to watch discussions and
+                            comments
+                          </li>
+                          <li>Forgot password email support</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 p-3 d-flex flex-column">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-success h-100">
+                    <div class="card-body">
+                      <div class="project-title d-flex justify-content-between">
+                        <h4 class="card-title">LANQUIZ</h4>
+                      </div>
+                      <div class="card-text">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">HTML</li>
+                          <li class="badge bg-secondary">CSS</li>
+                          <li class="badge bg-info">Javascript</li>
+                          <li class="badge bg-success">Vue.js</li>
+                          <li class="badge bg-info">Bootstrap</li>
+                          <li class="badge bg-success">Node.js</li>
+                          <li class="badge bg-primary">Restify</li>
+                          <li class="badge bg-light">Socket.io</li>
+                          <li class="badge bg-danger">MongoDB</li>
+                        </ul>
+                      </div>
+                      <p class="project-description">
+                        A quiz conducting web application where administrators
+                        can add questions, users can play the quiz and see score
+                      </p>
+                      <div id="project-features">
+                        <h5>Features</h5>
+                        <ul>
+                          <li>User can set their name and start the quiz</li>
+                          <li>Quiz timer</li>
+                          <li>Questions and answers shown in random order</li>
+                          <li>User can navigate between questions freely</li>
+                          <li>Live scoreboard</li>
+                          <li>
+                            Administrator dashboard to add, edit and delete
+                            questions
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 p-3 d-flex flex-column">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-info h-100">
+                    <div class="card-body">
+                      <div class="project-title d-flex justify-content-between">
+                        <h4 class="card-title">Scatter Network</h4>
+                      </div>
+                      <div class="card-text">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">HTML</li>
+                          <li class="badge bg-secondary">CSS</li>
+                          <li class="badge bg-info">Javascript</li>
+                          <li class="badge bg-light">Bootstrap</li>
+                          <li class="badge bg-dark">Php</li>
+                          <li class="badge bg-primary">MySQL</li>
+                        </ul>
+                      </div>
+                      <p class="project-description">
+                        A social media site where users can post contents,
+                        comment under them, use hashtags
+                      </p>
+                      <div id="project-features">
+                        <h5>Features</h5>
+                        <ul>
+                          <li>2 levels of access control: user and admin</li>
+                          <li>
+                            Each user can create a post, comment under others
+                            post, like them
+                          </li>
+                          <li>Hashtags support for creating topics</li>
+                          <li>
+                            User can browse posts under their favourite topics
+                          </li>
+                          <li>Images support for posts</li>
+                          <li>Profile image support</li>
+                          <li>Forgot password email support</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 p-3 d-flex flex-column">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-light h-100">
+                    <div class="card-body">
+                      <div class="project-title d-flex justify-content-between">
+                        <h4 class="card-title">Ecommerce Android App</h4>
+                      </div>
+                      <div class="card-text">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">Javascript</li>
+                          <li class="badge bg-info">React</li>
+                          <li class="badge bg-dark">Php</li>
+                          <li class="badge bg-danger">MySQL</li>
+                          <li class="badge bg-success">Razorpay API</li>
+                        </ul>
+                      </div>
+                      <p class="project-description">
+                        An ecommerce application developed for a local shop to
+                        sell their products online
+                      </p>
+                      <div id="project-features">
+                        <h5>Features</h5>
+                        <ul>
+                          <li>Mobile OTP based login</li>
+                          <li>Cart</li>
+                          <li>Product images, categories</li>
+                          <li>Razorpay payment gateway</li>
+                          <li>Cash on delivery</li>
+                          <li>Manage addresses, order</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer
       id="footer"
       data-bs-theme="dark"
-      class="d-flex justify-content-center align-items-center p-4 text-info"
+      class="d-flex justify-content-center align-items-center p-4 text-info bg-dark"
     >
       <div>null-dimension - <span id="copyright-year">2023</span></div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
