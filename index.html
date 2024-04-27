@@ -1,46 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>null-dimension.github.io</title>
-    <script src="assets/js/winbox.bundle.js"></script>
-    <link rel="stylesheet" href="assets/css/modern.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<div id="sidebar">
-    <div id="content">
-        <h2>Projects by <a href="https://github.com/null-dimension">null-dimension</a></h2>
-        <ul>
-            <li>
-                <a href="https://null-dimension.github.io/portfolio">Portfolio Example</a> : Example Portfolio Page created with React and ARWES
-            </li>
-            <br>
-            <li>
-                <a href="https://lan-quiz.herokuapp.com">LAN QUIZ</a> : Quiz application that allows users to compete in a local area network. Features include questions with
-                dynamic number of options, live score, auto play. Created with Vue/Node.js.
-            </li>
-            <br>
-            <li>
-                <a href="https://scatter.thepcstudio.com">SCATTER NETWORK</a> : A social network where people can follow each other, create posts, comments and like posts. Created with Php.
-            </li>
-            <br>
-            <li>
-                <a href="https://intnet-frontend.herokuapp.com/#/">INTERESTS NETWORK</a> : A social platform where users can create their interest and create posts under them similar to reddit. Created With Vue/Node.js
-            </li>
-            <br>
-            <li>
-                <a href="https://github.com/null-dimension/jiofi-charge-notifier">JIOFI CHARGE NOTIFIER</a> : Notifies with a toast when the jiofi(a Portable WiFi Hotspot Device) battery charge is more or less than
-                the specified amount. Created with Python.
-            </li>
-            <br>
-            <li>
-                <a href="https://quizstudio.thepcstudio.com/">QUIZ STUDIO</a> : A quiz creating platform where users can play and rate quizzes along with leaderboard.
-            </li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div
+      id="about-container"
+      class="d-flex justify-content-center align-items-center flex-column w-100 vh-100"
+    >
+      <div id="about" class="p-4 m-2 max-width-50">
+        <div class="card-body">
+          <h1 class="card-title">
+            <xmp class="m-0"><Hrishi /></xmp>
+          </h1>
+          <h6 class="card-subtitle text-muted"></h6>
+          <div class="card-text mt-4">
+            <p>
+              Result-oriented software engineer with
+              <span id="experience-year">4+</span> years of experience
+              specializing in JavaScript, Vue.js, Python, FastAPI and having a track
+              record of delivering high-quality, scalable web applications and
+              APIs. Possess strong debugging skills and a passion for staying
+              updated with the latest technologies.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div id="skills-container" class="h-100 w-100">
+      <div id="skills" class="p-4">
+        <div class="card-body">
+          <h4 class="card-title">
+            <xmp class="m-0"><Skills /></xmp>
+          </h4>
+          <div id="skills-grid">
+            <div class="row">
+              <div class="col-md-6 p-3 d-flex flex-column">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-secondary h-100">
+                    <div class="card-body">
+                      <h4 class="card-title">Front end</h4>
+                      <div class="card-text" id="frontend">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">HTML</li>
+                          <li class="badge bg-secondary">CSS</li>
+                          <li class="badge bg-info">Javascript</li>
+                          <li class="badge bg-dark">Vue.js</li>
+                          <li class="badge bg-light">React</li>
+                          <li class="badge bg-info">React Native</li>
+                          <li class="badge bg-secondary">Bootstrap</li>
+                          <li class="badge bg-primary">Materialize</li>
+                          <li class="badge bg-danger">Tailwind</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 p-3 d-flex flex-column">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-success h-100">
+                    <div class="card-body">
+                      <h4 class="card-title">Back end</h4>
+                      <div class="card-text" id="backend">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">Node.js</li>
+                          <li class="badge bg-secondary">Express.js</li>
+                          <li class="badge bg-danger">Python</li>
+                          <li class="badge bg-dark">FastAPI</li>
+                          <li class="badge bg-light">Php</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 p-3 d-flex flex-column">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-danger h-100">
+                    <div class="card-body">
+                      <h4 class="card-title">Database</h4>
+                      <div class="card-text" id="database">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">MongoDB</li>
+                          <li class="badge bg-secondary">MySQL</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 p-3 d-flex flex-column">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-warning h-100">
+                    <div class="card-body">
+                      <h4 class="card-title">Cloud</h4>
+                      <div class="card-text" id="cloud">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">Docker</li>
+                          <li class="badge bg-secondary">Vagrant</li>
+                          <li class="badge bg-dark">Nginx</li>
+                          <li class="badge bg-danger">Apache</li>
+                          <li class="badge bg-primary">Linux</li>
+                          <li class="badge bg-light">AWS</li>
+                          <li class="badge bg-secondary">Azure</li>
+                          <li class="badge bg-primary">Kubernetes</li>
+                          <li class="badge bg-danger">Rancher</li>
+                          <li class="badge bg-dark">Cloud Foundry</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 p-3 d-flex flex-column">
+                <div class="card-text flex-grow-1">
+                  <div class="card border-info h-100">
+                    <div class="card-body">
+                      <h4 class="card-title">Tools</h4>
+                      <div class="card-text" id="tools">
+                        <ul class="p-0">
+                          <li class="badge bg-primary">Git</li>
+                          <li class="badge bg-secondary">Github</li>
+                          <li class="badge bg-dark">Postman</li>
+                          <li class="badge bg-danger">MongoDB Compass</li>
+                          <li class="badge bg-light">Jenkins</li>
+                          <li class="badge bg-primary">Jira</li>
+                          <li class="badge bg-secondary">VS Code</li>
+                          <li class="badge bg-dark">ffmpeg</li>
+                          <li class="badge bg-danger">Google</li>
+                          <li class="badge bg-primary">ChatGPT</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="contact">
+    <h3>Contact</h3>
+
+  </div> -->
+    <footer
+      id="footer"
+      data-bs-theme="dark"
+      class="d-flex justify-content-center align-items-center p-4 text-info"
+    >
+      <div>null-dimension - <span id="copyright-year">2023</span></div>
+    </footer>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
