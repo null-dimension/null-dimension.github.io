@@ -97,7 +97,6 @@ const buildSkills = (skill) => {
 
 // Callback function to handle intersection changes
 const handleIntersection = (entries, observer) => {
-  console.info(entries, observer);
   entries.forEach((entry) => {
     // If target element is intersecting with the viewport
     if (entry.isIntersecting) {
@@ -109,8 +108,17 @@ const handleIntersection = (entries, observer) => {
   });
 };
 
+const getAboutContent = () => {
+  const aboutText = `Result-oriented software engineer with
+  ${getExperience()} years of experience
+  specializing in JavaScript, Vue.js, Python, FastAPI and having a
+  track record of delivering high-quality, scalable web applications
+  and APIs. Possess strong debugging skills and a passion for
+  staying updated with the latest technologies.`;
+  return aboutText;
+};
+
 window.onload = () => {
-  setExperienceYear();
   setFooter();
   buildSkills("frontend");
   buildSkills("backend");
@@ -131,9 +139,12 @@ window.onload = () => {
   // Target element to observe
   const aboutElement = document.getElementById("about");
   aboutElement.classes = ["card", "border-primary"];
-  const skillsElement = document.getElementById("skills");
-  skillsElement.classes = ["card", "border-success"];
-  // Start observing the target element
   observer.observe(aboutElement);
-  observer.observe(skillsElement);
+
+  const typed = new Typed("#about-paragraph", {
+    strings: [getAboutContent()],
+    typeSpeed: 1,
+  });
+
+  new WOW().init();
 };
