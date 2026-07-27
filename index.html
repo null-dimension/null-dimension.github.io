@@ -1,499 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hrishi — null-dimension</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0d0f;
+    --surface:#13161a;
+    --surface-2:#191d22;
+    --border:#262b31;
+    --text:#e6e9ec;
+    --text-muted:#8b93a1;
+    --text-dim:#565d68;
 
-  <body>
-    <div
-      id="about-container"
-      class="d-flex justify-content-center align-items-center flex-column w-100 vh-100"
-    >
-      <div id="about" class="p-4 m-2 max-width-50 min-width-50">
-        <div class="card-body">
-          <h1 class="card-title">
-            <xmp class="m-0 jersey-20-regular"><Hrishi /></xmp>
-          </h1>
-          <h6 class="card-subtitle text-muted"></h6>
-          <div class="card-text mt-4 poppins-regular">
-            <span id="about-paragraph"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="skills-container" class="h-100 w-100 p-3">
-      <div id="skills" class="p-4">
-        <div class="card-body">
-          <h2 class="card-title wow flipInX">
-            <xmp class="m-0 jersey-20-regular"><Skills /></xmp>
-          </h2>
-          <div id="skills-grid">
-            <div class="row">
-              <div class="col-md-6 p-3 d-flex flex-column">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-secondary h-100">
-                    <div class="card-body">
-                      <h4 class="card-title jersey-20-regular">Front end</h4>
-                      <div class="card-text" id="frontend">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">HTML</li>
-                          <li class="badge bg-secondary">CSS</li>
-                          <li class="badge bg-info">Javascript</li>
-                          <li class="badge bg-dark">Vue.js</li>
-                          <li class="badge bg-light">React</li>
-                          <li class="badge bg-info">React Native</li>
-                          <li class="badge bg-secondary">Bootstrap</li>
-                          <li class="badge bg-primary">Materialize</li>
-                          <li class="badge bg-danger">Tailwind</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 p-3 d-flex flex-column">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-success h-100">
-                    <div class="card-body">
-                      <h4 class="card-title jersey-20-regular">Back end</h4>
-                      <div class="card-text" id="backend">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">Node.js</li>
-                          <li class="badge bg-secondary">Express.js</li>
-                          <li class="badge bg-danger">Python</li>
-                          <li class="badge bg-dark">FastAPI</li>
-                          <li class="badge bg-light">Php</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 p-3 d-flex flex-column">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-danger h-100">
-                    <div class="card-body">
-                      <h4 class="card-title jersey-20-regular">Database</h4>
-                      <div class="card-text" id="database">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">MongoDB</li>
-                          <li class="badge bg-secondary">MySQL</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 p-3 d-flex flex-column">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-warning h-100">
-                    <div class="card-body">
-                      <h4 class="card-title jersey-20-regular">Cloud</h4>
-                      <div class="card-text" id="cloud">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">Docker</li>
-                          <li class="badge bg-secondary">Vagrant</li>
-                          <li class="badge bg-dark">Nginx</li>
-                          <li class="badge bg-danger">Apache</li>
-                          <li class="badge bg-primary">Linux</li>
-                          <li class="badge bg-light">AWS</li>
-                          <li class="badge bg-secondary">Azure</li>
-                          <li class="badge bg-primary">Kubernetes</li>
-                          <li class="badge bg-danger">Rancher</li>
-                          <li class="badge bg-dark">Cloud Foundry</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 p-3 d-flex flex-column">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-info h-100">
-                    <div class="card-body">
-                      <h4 class="card-title jersey-20-regular">Tools</h4>
-                      <div class="card-text" id="tools">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">Git</li>
-                          <li class="badge bg-secondary">Github</li>
-                          <li class="badge bg-dark">Postman</li>
-                          <li class="badge bg-danger">MongoDB Compass</li>
-                          <li class="badge bg-light">Jenkins</li>
-                          <li class="badge bg-primary">Jira</li>
-                          <li class="badge bg-secondary">VS Code</li>
-                          <li class="badge bg-dark">ffmpeg</li>
-                          <li class="badge bg-danger">Google</li>
-                          <li class="badge bg-primary">ChatGPT</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    --cat-frontend:#5eead4;   /* cyan */
+    --cat-backend:#f5a524;    /* amber */
+    --cat-database:#a78bfa;   /* purple */
+    --cat-cloud:#60a5fa;      /* blue */
+    --cat-tools:#86efac;      /* green */
 
-    <div class="h-100 w-100 projects-container p-3">
-      <div id="exp-projects" class="p-4">
-        <div class="card-body">
-          <h2 class="card-title wow flipInX">
-            <xmp class="m-0 jersey-20-regular"><ExperimentalProjects /></xmp>
-          </h2>
-          <div>
-            <div class="row">
-              <div class="col-md-6 p-3 d-flex flex-column slideInLeft">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-secondary h-100">
-                    <div class="card-body">
-                      <div
-                        class="project-title d-flex justify-content-between align-items-center mb-2"
-                      >
-                        <h4 class="card-title m-0 jersey-20-regular">Snakes and Ladders</h4>
-                        <div>
-                          <a
-                            href="/snakes-and-ladders"
-                            class="btn btn-sm btn-dark"
-                            target="_blank"
-                            >Play</a
-                          >
-                        </div>
-                      </div>
-                      <div class="card-text">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">HTML</li>
-                          <li class="badge bg-secondary">CSS</li>
-                          <li class="badge bg-info">Javascript</li>
-                        </ul>
-                      </div>
-                      <p class="project-description">
-                        A game built on the concept of the board game snakes and
-                        ladders. Developed without using any third party
-                        libraries
-                      </p>
-                      <div id="project-features">
-                        <h5>Features</h5>
-                        <ul>
-                          <li>Auto Play</li>
-                          <li>Support upto 5 players at a time</li>
-                          <li>Play with AI</li>
-                          <li>Local Multiplayer</li>
-                          <li>
-                            Snakes and ladders are randomly generated each time
-                            the level is loaded
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 p-3 d-flex flex-column slideInRight">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-success h-100">
-                    <div class="card-body">
-                      <div
-                        class="project-title d-flex justify-content-between align-items-center mb-2"
-                      >
-                        <h4 class="card-title m-0 jersey-20-regular">RNGFY</h4>
-                        <div>
-                          <a
-                            href="/rngfy"
-                            class="btn btn-sm btn-dark"
-                            target="_blank"
-                            >Demo</a
-                          >
-                          <a
-                            href="https://github.com/null-dimension/rngfy"
-                            class="btn btn-sm btn-dark"
-                            target="_blank"
-                            >Firefox Extension</a
-                          >
-                        </div>
-                      </div>
-                      <div class="card-text">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">HTML</li>
-                          <li class="badge bg-secondary">CSS</li>
-                          <li class="badge bg-info">Javascript</li>
-                        </ul>
-                      </div>
-                      <p class="project-description">
-                        Fun little project to randomly generate the styles in
-                        web page and see the effects it has
-                      </p>
-                      <div id="project-features">
-                        <h5>Features</h5>
-                        <ul>
-                          <li>
-                            Random styles are applied to HTML elmeents when
-                            button is clicked
-                          </li>
-                          <li>
-                            Can function as firefox extension to apply random
-                            styles to any web page being viewed
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 p-3 d-flex flex-column slideInRight">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-success h-100">
-                    <div class="card-body">
-                      <div
-                        class="project-title d-flex justify-content-between align-items-center mb-2"
-                      >
-                        <h4 class="card-title m-0 jersey-20-regular">INTNET(v2) UI</h4>
-                        <div>
-                          <a
-                            href="https://intne-v2.pages.dev"
-                            class="btn btn-sm btn-dark"
-                            target="_blank"
-                            >Demo</a>
-                        </div>
-                      </div>
-                      <div class="card-text">
-                        <ul class="p-0">
-                          <li class="badge bg-secondary">Vue</li>
-                          <li class="badge bg-primary">NuxtJS</li>
-                          <li class="badge bg-info">NuxtUI</li>
-                          <li class="badge bg-info">Tailwind</li>
-                        </ul>
-                      </div>
-                      <p class="project-description">
-                        Concept design for a social media site
-                      </p>
-                      <div id="project-features">
-                        <h5>Features</h5>
-                        <ul>
-                          <li>Dark theme support</li>
-                          <li>Navbar, Footer design</li>
-                          <li>
-                            Home, About, Login, Reigster Pages design
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    --status-live:#4ade80;
+    --status-archived:#565d68;
 
-    <div class="h-100 w-100 projects-container p-3">
-      <div id="exp-projects" class="p-4">
-        <div class="card-body">
-          <h2 class="card-title wow flipInX">
-            <xmp class="m-0 jersey-20-regular"><ArchivedProjects /></xmp>
-          </h2>
-          <div>
-            <div class="row">
-              <div class="col-md-6 p-3 d-flex flex-column">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-secondary h-100">
-                    <div class="card-body">
-                      <div class="project-title d-flex justify-content-between">
-                        <h4 class="card-title jersey-20-regular">Intnet - Interests Network</h4>
-                      </div>
-                      <div class="card-text">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">HTML</li>
-                          <li class="badge bg-secondary">CSS</li>
-                          <li class="badge bg-info">Javascript</li>
-                          <li class="badge bg-success">Vue.js</li>
-                          <li class="badge bg-info">Bulma</li>
-                          <li class="badge bg-success">Node.js</li>
-                          <li class="badge bg-secondary">Restify</li>
-                          <li class="badge bg-primary">MySQL</li>
-                        </ul>
-                      </div>
-                      <p class="project-description">
-                        A social media site where users with similar interests
-                        can start discussions with each other, comment and
-                        follow others
-                      </p>
-                      <div id="project-features">
-                        <h5>Features</h5>
-                        <ul>
-                          <li>
-                            3 levels of access control: user, moderator, admin
-                          </li>
-                          <li>
-                            Each user can start or close discussion, like
-                            discussions, add comments, like comments
-                          </li>
-                          <li>
-                            Image upload support in both discussion and comment
-                          </li>
-                          <li>Follow other users</li>
-                          <li>Send private messages to others</li>
-                          <li>Set profile image</li>
-                          <li>
-                            Administrator dashboard to watch discussions and
-                            comments
-                          </li>
-                          <li>Forgot password email support</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 p-3 d-flex flex-column">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-success h-100">
-                    <div class="card-body">
-                      <div class="project-title d-flex justify-content-between">
-                        <h4 class="card-title jersey-20-regular">LANQUIZ</h4>
-                      </div>
-                      <div class="card-text">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">HTML</li>
-                          <li class="badge bg-secondary">CSS</li>
-                          <li class="badge bg-info">Javascript</li>
-                          <li class="badge bg-success">Vue.js</li>
-                          <li class="badge bg-info">Bootstrap</li>
-                          <li class="badge bg-success">Node.js</li>
-                          <li class="badge bg-primary">Restify</li>
-                          <li class="badge bg-light">Socket.io</li>
-                          <li class="badge bg-danger">MongoDB</li>
-                        </ul>
-                      </div>
-                      <p class="project-description">
-                        A quiz conducting web application where administrators
-                        can add questions, users can play the quiz and see score
-                      </p>
-                      <div id="project-features">
-                        <h5>Features</h5>
-                        <ul>
-                          <li>User can set their name and start the quiz</li>
-                          <li>Quiz timer</li>
-                          <li>Questions and answers shown in random order</li>
-                          <li>User can navigate between questions freely</li>
-                          <li>Live scoreboard</li>
-                          <li>
-                            Administrator dashboard to add, edit and delete
-                            questions
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 p-3 d-flex flex-column">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-info h-100">
-                    <div class="card-body">
-                      <div class="project-title d-flex justify-content-between">
-                        <h4 class="card-title jersey-20-regular">Scatter Network</h4>
-                      </div>
-                      <div class="card-text">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">HTML</li>
-                          <li class="badge bg-secondary">CSS</li>
-                          <li class="badge bg-info">Javascript</li>
-                          <li class="badge bg-light">Bootstrap</li>
-                          <li class="badge bg-dark">Php</li>
-                          <li class="badge bg-primary">MySQL</li>
-                        </ul>
-                      </div>
-                      <p class="project-description">
-                        A social media site where users can post contents,
-                        comment under them, use hashtags
-                      </p>
-                      <div id="project-features">
-                        <h5>Features</h5>
-                        <ul>
-                          <li>2 levels of access control: user and admin</li>
-                          <li>
-                            Each user can create a post, comment under others
-                            post, like them
-                          </li>
-                          <li>Hashtags support for creating topics</li>
-                          <li>
-                            User can browse posts under their favourite topics
-                          </li>
-                          <li>Images support for posts</li>
-                          <li>Profile image support</li>
-                          <li>Forgot password email support</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 p-3 d-flex flex-column">
-                <div class="card-text flex-grow-1">
-                  <div class="card border-light h-100">
-                    <div class="card-body">
-                      <div class="project-title d-flex justify-content-between">
-                        <h4 class="card-title jersey-20-regular">Ecommerce Android App</h4>
-                      </div>
-                      <div class="card-text">
-                        <ul class="p-0">
-                          <li class="badge bg-primary">Javascript</li>
-                          <li class="badge bg-info">React</li>
-                          <li class="badge bg-dark">Php</li>
-                          <li class="badge bg-danger">MySQL</li>
-                          <li class="badge bg-success">Razorpay API</li>
-                        </ul>
-                      </div>
-                      <p class="project-description">
-                        An ecommerce application developed for a local shop to
-                        sell their products online
-                      </p>
-                      <div id="project-features">
-                        <h5>Features</h5>
-                        <ul>
-                          <li>Mobile OTP based login</li>
-                          <li>Cart</li>
-                          <li>Product images, categories</li>
-                          <li>Razorpay payment gateway</li>
-                          <li>Cash on delivery</li>
-                          <li>Manage addresses, order</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    --font-mono:'JetBrains Mono', ui-monospace, monospace;
+    --font-body:'IBM Plex Sans', system-ui, sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.035) 1px, transparent 0) 0 0/28px 28px,
+      var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    line-height:1.6;
+  }
+
+  ::selection{ background:var(--cat-frontend); color:#0b0d0f; }
+
+  a{ color:var(--cat-frontend); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+
+  :focus-visible{
+    outline:2px solid var(--cat-frontend);
+    outline-offset:2px;
+  }
+
+  .wrap{
+    max-width:980px;
+    margin:0 auto;
+    padding:64px 24px;
+  }
+
+  .eyebrow{
+    display:block;
+    font-family:var(--font-mono);
+    font-size:0.78rem;
+    letter-spacing:0.08em;
+    color:var(--cat-frontend);
+    margin-bottom:14px;
+  }
+  .eyebrow::before{ content:"$ "; color:var(--text-dim); }
+
+  h1,h2,h3,h4{ font-family:var(--font-mono); margin:0; }
+
+  /* ---------- reveal-on-scroll ---------- */
+  .reveal{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.is-visible{ opacity:1; transform:translateY(0); }
+  @media (prefers-reduced-motion: reduce){
+    .reveal{ opacity:1; transform:none; transition:none; }
+  }
+
+  /* ---------- terminal window chrome ---------- */
+  .term{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+    overflow:hidden;
+  }
+  .term-bar{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 14px;
+    background:var(--surface-2);
+    border-bottom:1px solid var(--border);
+  }
+  .term-dot{ width:10px; height:10px; border-radius:50%; }
+  .term-title{
+    margin-left:8px;
+    font-family:var(--font-mono);
+    font-size:0.72rem;
+    color:var(--text-dim);
+  }
+  .term-body{ padding:26px 28px; }
+
+  /* ---------- hero ---------- */
+  #hero{ padding-top:88px; }
+  .hero-line{
+    font-family:var(--font-mono);
+    font-size:0.95rem;
+    color:var(--text-muted);
+    margin:0 0 6px;
+  }
+  .hero-line .prompt{ color:var(--text-dim); }
+  .hero-name{
+    font-size:clamp(2.2rem, 6vw, 3.4rem);
+    font-weight:800;
+    margin:6px 0 4px;
+    letter-spacing:-0.02em;
+  }
+  .hero-role{
+    font-family:var(--font-mono);
+    color:var(--cat-frontend);
+    font-size:1.05rem;
+    margin-bottom:22px;
+  }
+  #about-paragraph-wrap{
+    font-size:1.02rem;
+    color:var(--text);
+    max-width:64ch;
+  }
+  .cursor{
+    display:inline-block;
+    width:9px; height:1.1em;
+    background:var(--cat-frontend);
+    vertical-align:text-bottom;
+    margin-left:2px;
+    animation:blink 1s step-end infinite;
+  }
+  @keyframes blink{ 50%{ opacity:0; } }
+  @media (prefers-reduced-motion: reduce){ .cursor{ animation:none; } }
+
+  /* ---------- section headers ---------- */
+  .section-head{ margin-bottom:36px; }
+  .section-head h2{
+    font-size:1.5rem;
+    letter-spacing:-0.01em;
+  }
+
+  /* ---------- skills ---------- */
+  #skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:20px;
+  }
+  .skill-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:22px 22px 24px;
+    border-top:2px solid var(--accent, var(--border));
+  }
+  .skill-card h4{
+    font-size:0.95rem;
+    letter-spacing:0.02em;
+    color:var(--accent, var(--text));
+    margin-bottom:4px;
+  }
+  .skill-path{
+    font-family:var(--font-mono);
+    font-size:0.72rem;
+    color:var(--text-dim);
+    margin-bottom:16px;
+  }
+  .tag-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    list-style:none;
+    margin:0; padding:0;
+  }
+  .tag{
+    font-family:var(--font-mono);
+    font-size:0.76rem;
+    padding:5px 10px;
+    border-radius:6px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    color:var(--text-muted);
+  }
+
+  /* ---------- projects ---------- */
+  .project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+  }
+  .project-card .term-body{ padding:22px 24px 24px; }
+  .project-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:12px;
+    margin-bottom:10px;
+  }
+  .project-title{ font-size:1.05rem; }
+  .project-links{ display:flex; gap:8px; flex-shrink:0; }
+  .btn{
+    font-family:var(--font-mono);
+    font-size:0.74rem;
+    padding:6px 11px;
+    border-radius:6px;
+    border:1px solid var(--border);
+    color:var(--text);
+    background:var(--surface-2);
+  }
+  .btn:hover{ border-color:var(--cat-frontend); text-decoration:none; color:var(--cat-frontend); }
+  .project-desc{ color:var(--text-muted); font-size:0.92rem; margin:0 0 14px; }
+  .project-stack{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px; }
+  .project-stack .tag{ font-size:0.7rem; padding:3px 8px; }
+  .feat-label{
+    font-family:var(--font-mono);
+    font-size:0.7rem;
+    letter-spacing:0.08em;
+    color:var(--text-dim);
+    margin-bottom:8px;
+  }
+  .project-card ul.features{
+    margin:0; padding-left:18px;
+    color:var(--text-muted);
+    font-size:0.88rem;
+  }
+  .project-card ul.features li{ margin-bottom:4px; }
+
+  .archived .term-bar .term-title{ color:var(--text-dim); }
+  .archived .project-card, .archived{ opacity:0.88; }
+
+  /* ---------- footer ---------- */
+  footer{
+    border-top:1px solid var(--border);
+    padding:28px 24px 40px;
+    text-align:center;
+    font-family:var(--font-mono);
+    font-size:0.82rem;
+    color:var(--text-dim);
+  }
+  footer .prompt{ color:var(--cat-frontend); }
+
+  @media (max-width:600px){
+    .wrap{ padding:44px 18px; }
+    .term-body{ padding:20px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ABOUT / HERO -->
+  <section id="hero" class="wrap">
+    <div class="term reveal" id="about-term">
+      <div class="term-bar">
+        <span class="term-dot" style="background:#ef4444"></span>
+        <span class="term-dot" style="background:#f5a524"></span>
+        <span class="term-dot" style="background:#4ade80"></span>
+        <span class="term-title">hrishi@null-dimension:~</span>
+      </div>
+      <div class="term-body">
+        <p class="hero-line"><span class="prompt">&gt;</span> whoami</p>
+        <h1 class="hero-name">Hrishi</h1>
+        <p class="hero-role">Senior Software Engineer</p>
+        <p class="hero-line"><span class="prompt">&gt;</span> cat about.md</p>
+        <div id="about-paragraph-wrap"><span id="about-paragraph"></span><span class="cursor"></span></div>
       </div>
     </div>
-    <footer
-      id="footer"
-      data-bs-theme="dark"
-      class="d-flex justify-content-center align-items-center p-4 text-info bg-dark"
-    >
-      <div class="ubuntu-mono-regular">null-dimension - <span id="copyright-year">2023</span></div>
-    </footer>
-    <div class="top-trapezoid d-flex justify-content-center align-items-center p-2"><h1>Welcome</h1></div>
-    <div class="left-trapezoid"></div>
-    <div class="right-trapezoid"></div>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills-section" class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">ls ./stack</span>
+      <h2>Skills</h2>
+    </div>
+    <div id="skills-grid">
+      <div class="skill-card reveal" style="--accent:var(--cat-frontend)">
+        <h4>Frontend</h4>
+        <div class="skill-path">stack/frontend.json</div>
+        <ul class="tag-row" id="frontend"></ul>
+      </div>
+      <div class="skill-card reveal" style="--accent:var(--cat-backend)">
+        <h4>Backend</h4>
+        <div class="skill-path">stack/backend.json</div>
+        <ul class="tag-row" id="backend"></ul>
+      </div>
+      <div class="skill-card reveal" style="--accent:var(--cat-database)">
+        <h4>Database</h4>
+        <div class="skill-path">stack/database.json</div>
+        <ul class="tag-row" id="database"></ul>
+      </div>
+      <div class="skill-card reveal" style="--accent:var(--cat-cloud)">
+        <h4>Cloud &amp; Infra</h4>
+        <div class="skill-path">stack/cloud.json</div>
+        <ul class="tag-row" id="cloud"></ul>
+      </div>
+      <div class="skill-card reveal" style="--accent:var(--cat-tools); grid-column:1 / -1">
+        <h4>Tools</h4>
+        <div class="skill-path">stack/tools.json</div>
+        <ul class="tag-row" id="tools"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIMENTAL PROJECTS -->
+  <section id="exp-projects-section" class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">./run projects.sh --active</span>
+      <h2>Experimental Projects</h2>
+    </div>
+    <div class="project-grid">
+
+      <div class="term project-card reveal">
+        <div class="term-bar">
+          <span class="term-dot" style="background:var(--status-live)"></span>
+          <span class="term-title">snakes-and-ladders — running</span>
+        </div>
+        <div class="term-body">
+          <div class="project-top">
+            <h4 class="project-title">Snakes and Ladders</h4>
+            <div class="project-links"><a class="btn" href="/snakes-and-ladders" target="_blank">Play</a></div>
+          </div>
+          <p class="project-desc">A game built on the concept of the board game snakes and ladders — developed without any third-party libraries.</p>
+          <div class="project-stack">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Javascript</span>
+          </div>
+          <div class="feat-label">FEATURES</div>
+          <ul class="features">
+            <li>Auto play</li>
+            <li>Up to 5 players at a time</li>
+            <li>Play against AI</li>
+            <li>Local multiplayer</li>
+            <li>Snakes and ladders regenerate randomly each level load</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="term project-card reveal">
+        <div class="term-bar">
+          <span class="term-dot" style="background:var(--status-live)"></span>
+          <span class="term-title">rngfy — running</span>
+        </div>
+        <div class="term-body">
+          <div class="project-top">
+            <h4 class="project-title">RNGFY</h4>
+            <div class="project-links">
+              <a class="btn" href="/rngfy" target="_blank">Demo</a>
+              <a class="btn" href="https://github.com/null-dimension/rngfy" target="_blank">Extension</a>
+            </div>
+          </div>
+          <p class="project-desc">A fun little project to randomly generate styles on a web page and see the effects it has.</p>
+          <div class="project-stack">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Javascript</span>
+          </div>
+          <div class="feat-label">FEATURES</div>
+          <ul class="features">
+            <li>Random styles applied to HTML elements on click</li>
+            <li>Works as a Firefox extension on any page being viewed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="term project-card reveal">
+        <div class="term-bar">
+          <span class="term-dot" style="background:var(--status-live)"></span>
+          <span class="term-title">intnet-v2-ui — running</span>
+        </div>
+        <div class="term-body">
+          <div class="project-top">
+            <h4 class="project-title">INTNET (v2) UI</h4>
+            <div class="project-links"><a class="btn" href="https://intne-v2.pages.dev" target="_blank">Demo</a></div>
+          </div>
+          <p class="project-desc">Concept design for a social media site.</p>
+          <div class="project-stack">
+            <span class="tag">Vue</span><span class="tag">NuxtJS</span><span class="tag">NuxtUI</span><span class="tag">Tailwind</span>
+          </div>
+          <div class="feat-label">FEATURES</div>
+          <ul class="features">
+            <li>Dark theme support</li>
+            <li>Navbar, footer design</li>
+            <li>Home, about, login, register page designs</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ARCHIVED PROJECTS -->
+  <section id="archived-projects-section" class="wrap archived">
+    <div class="section-head reveal">
+      <span class="eyebrow">ls ./projects --archived</span>
+      <h2>Archived Projects</h2>
+    </div>
+    <div class="project-grid">
+
+      <div class="term project-card reveal">
+        <div class="term-bar">
+          <span class="term-dot" style="background:var(--status-archived)"></span>
+          <span class="term-title">intnet — archived</span>
+        </div>
+        <div class="term-body">
+          <h4 class="project-title" style="margin-bottom:10px;">Intnet — Interests Network</h4>
+          <p class="project-desc">A social media site where users with similar interests start discussions, comment, and follow each other.</p>
+          <div class="project-stack">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Javascript</span><span class="tag">Vue.js</span><span class="tag">Bulma</span><span class="tag">Node.js</span><span class="tag">Restify</span><span class="tag">MySQL</span>
+          </div>
+          <div class="feat-label">FEATURES</div>
+          <ul class="features">
+            <li>3 access levels: user, moderator, admin</li>
+            <li>Start/close discussions, like discussions and comments</li>
+            <li>Image upload in discussions and comments</li>
+            <li>Follow other users, send private messages</li>
+            <li>Admin dashboard, forgot-password email support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="term project-card reveal">
+        <div class="term-bar">
+          <span class="term-dot" style="background:var(--status-archived)"></span>
+          <span class="term-title">lanquiz — archived</span>
+        </div>
+        <div class="term-body">
+          <h4 class="project-title" style="margin-bottom:10px;">LANQUIZ</h4>
+          <p class="project-desc">A quiz-conducting web app where admins add questions and users play and see live scores.</p>
+          <div class="project-stack">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Javascript</span><span class="tag">Vue.js</span><span class="tag">Bootstrap</span><span class="tag">Node.js</span><span class="tag">Restify</span><span class="tag">Socket.io</span><span class="tag">MongoDB</span>
+          </div>
+          <div class="feat-label">FEATURES</div>
+          <ul class="features">
+            <li>Quiz timer, questions shown in random order</li>
+            <li>Free navigation between questions</li>
+            <li>Live scoreboard</li>
+            <li>Admin dashboard to add, edit, delete questions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="term project-card reveal">
+        <div class="term-bar">
+          <span class="term-dot" style="background:var(--status-archived)"></span>
+          <span class="term-title">scatter-network — archived</span>
+        </div>
+        <div class="term-body">
+          <h4 class="project-title" style="margin-bottom:10px;">Scatter Network</h4>
+          <p class="project-desc">A social media site for posting content, commenting, and browsing by hashtag.</p>
+          <div class="project-stack">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Javascript</span><span class="tag">Bootstrap</span><span class="tag">Php</span><span class="tag">MySQL</span>
+          </div>
+          <div class="feat-label">FEATURES</div>
+          <ul class="features">
+            <li>2 access levels: user and admin</li>
+            <li>Create posts, comment, like</li>
+            <li>Hashtag topics, image support, profile images</li>
+            <li>Forgot-password email support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="term project-card reveal">
+        <div class="term-bar">
+          <span class="term-dot" style="background:var(--status-archived)"></span>
+          <span class="term-title">ecommerce-app — archived</span>
+        </div>
+        <div class="term-body">
+          <h4 class="project-title" style="margin-bottom:10px;">Ecommerce Android App</h4>
+          <p class="project-desc">An ecommerce application built for a local shop to sell products online.</p>
+          <div class="project-stack">
+            <span class="tag">Javascript</span><span class="tag">React</span><span class="tag">Php</span><span class="tag">MySQL</span><span class="tag">Razorpay</span>
+          </div>
+          <div class="feat-label">FEATURES</div>
+          <ul class="features">
+            <li>Mobile OTP login, cart, addresses and orders</li>
+            <li>Product images and categories</li>
+            <li>Razorpay payment gateway, cash on delivery</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    hrishi@null-dimension:~$ <span id="experience-year"></span>+ yrs in the field · © <span id="copyright-year">2026</span> <span class="prompt">_</span>
+  </footer>
+
+<script>
+  const skills = {
+    frontend: ["HTML","CSS","Javascript","Vue.js","React","React Native","Bootstrap","Materialize","Tailwind","Bulma"],
+    backend: ["Python","FastAPI","Node.js","Express.js","Php"],
+    database: ["MongoDB","MySQL","Redis"],
+    cloud: ["Linux","Docker","Vagrant","Apache","Nginx","AWS","Azure","Kubernetes","Rancher","Cloud Foundry","Jenkins"],
+    tools: ["Git","Github","Postman","MongoDB Compass","MySQL Workbench","Jira","VS Code","FFMPEG","Google","ChatGPT","Burpsuite","Wireshark","nmap"]
+  };
+
+  const START_YEAR = 2019;
+  const getExperience = () => new Date().getFullYear() - START_YEAR - 1;
+
+  const getAboutContent = () => {
+    return `Senior Software Engineer with ${getExperience()}+ years of experience across frontend and backend development, specializing in Python, FastAPI, distributed backend systems, and GenAI/LangGraph applications. Proven track record of designing scalable APIs, delivering end-to-end features, and collaborating across cross-functional teams.`;
+  };
+
+  const buildSkills = (key) => {
+    const container = document.getElementById(key);
+    container.innerHTML = "";
+    skills[key].forEach((label) => {
+      const li = document.createElement("li");
+      li.className = "tag";
+      li.textContent = label;
+      container.appendChild(li);
+    });
+  };
+
+  const setFooterData = () => {
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    document.getElementById("experience-year").textContent = getExperience();
+  };
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const typeText = (el, text, speed = 18) => {
+    if (prefersReducedMotion) { el.textContent = text; return; }
+    let i = 0;
+    el.textContent = "";
+    const tick = () => {
+      if (i <= text.length) {
+        el.textContent = text.slice(0, i);
+        i++;
+        setTimeout(tick, speed);
+      }
+    };
+    tick();
+  };
+
+  const setupReveal = () => {
+    const targets = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    targets.forEach((t) => observer.observe(t));
+  };
+
+  window.addEventListener("DOMContentLoaded", () => {
+    setFooterData();
+    buildSkills("frontend");
+    buildSkills("backend");
+    buildSkills("database");
+    buildSkills("cloud");
+    buildSkills("tools");
+    setupReveal();
+    typeText(document.getElementById("about-paragraph"), getAboutContent(), 14);
+  });
+</script>
+</body>
 </html>
