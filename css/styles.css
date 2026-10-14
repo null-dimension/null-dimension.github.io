@@ -292,6 +292,12 @@ button {
   background: linear-gradient(90deg, var(--accent), transparent);
 }
 
+.hero .eyebrow {
+  font-size: 0.95rem;
+  letter-spacing: 0.28em;
+  margin-bottom: 20px;
+}
+
 .hero__title {
   font-family: var(--font-display);
   font-size: clamp(2.7rem, 6vw, 4.3rem);
@@ -1501,11 +1507,11 @@ button {
   position: absolute;
   left: var(--wx, 50%);
   top: var(--wy, 50%);
-  width: 24vmax;
-  height: 24vmax;
+  width: 14vmax;
+  height: 14vmax;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: radial-gradient(circle, #000 0%, #000 34%, rgba(160, 175, 255, 0.5) 37%, rgba(109, 99, 255, 0.22) 44%, transparent 62%);
+  background: radial-gradient(circle, #000 0%, #000 34%, rgba(160, 175, 255, 0.35) 37%, rgba(109, 99, 255, 0.14) 44%, transparent 62%);
 }
 
 .warp.is-active {
@@ -1540,8 +1546,8 @@ button {
 @keyframes warp-singularity {
   0% { transform: translate(-50%, -50%) scale(0.25); opacity: 0; }
   30% { opacity: 1; }
-  60% { transform: translate(-50%, -50%) scale(1.05); opacity: 1; }
-  100% { transform: translate(-50%, -50%) scale(0.6); opacity: 0; }
+  60% { transform: translate(-50%, -50%) scale(0.7); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(0.45); opacity: 0; }
 }
 
 @keyframes warp-veil {

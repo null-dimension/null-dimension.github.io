@@ -6,7 +6,7 @@
   if (document.documentElement.classList.contains("no-boot")) return;
 
   const lines = [
-    { text: "> null-dimension kernel v0.9.4", delay: 60 },
+    { text: "> null-dimension kernel v1.3.3.7", delay: 60 },
     { text: "> mounting /dev/void ............ ", ok: "ok", delay: 34 },
     { text: "> resolving null pointer ........ ", ok: "void", delay: 40 },
     { text: "> calibrating portal ........... ", ok: "ok", delay: 34 },
